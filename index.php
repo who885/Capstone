@@ -55,7 +55,7 @@ $data =file_get_contents("https://api.song.link/v1-alpha.1/links?url=spotify%3At
                 //order $name, $art, $thumb, api, api1, api2, api3, api4
                 $object->set($name, $art, $thumb, $api, $api_2, $api_3, $api_4);
                 //creates the connection and adds to the database.
-                $object->create();
+              //  $object->create();
 ?>
 
   </body>
