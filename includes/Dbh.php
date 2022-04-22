@@ -7,6 +7,7 @@ private $db_user;
 private $db_pass;
 private $charset;
 
+//i have removed the credentials to log into the database because i don't think its a good idea to have that on a public github lol.
 public function connect(){
    $this->db_host = '';
    $this->db_name = '';
