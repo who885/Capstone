@@ -28,7 +28,6 @@ curl_setopt_array($curl, [
 
 $data = curl_exec($curl);
 
-
 $string = json_decode($data, TRUE);
 
 $lyrics = $string['response']['hits']['0']['result']['path'];
