@@ -50,7 +50,7 @@ $data =file_get_contents("https://api.song.link/v1-alpha.1/links?url=spotify%3At
                 $api_3 = "NULL";
                 $api_4 = "NULL";
 
-            $object = new insert();
+            //$object = new insert();
 
                 //order $name, $art, $thumb, api, api1, api2, api3, api4
                 $object->set($name, $art, $thumb, $api, $api_2, $api_3, $api_4);
