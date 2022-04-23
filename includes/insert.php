@@ -2,7 +2,7 @@
 
 
 /**
- * 
+ *
  *@param object $conn creates connection to database
  *@param
  */

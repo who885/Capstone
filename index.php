@@ -23,7 +23,7 @@
       </ul>
     </nav>
     <div class="">
-      <p>song name: <?= $data[0]["song_name"]?></p>
+      <p><?= $data[0]["song_name"]?></p>
     </div>
 
   </body>
