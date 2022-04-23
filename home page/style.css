@@ -1,0 +1,175 @@
+* {
+  box-sizing: boder-box;
+}
+
+body {
+  margin: 0;
+}
+
+#main {
+  position: relative;
+  z-index: 20;
+  background: #fff;
+  transition: transform 0.6s ease;
+}
+@media (min-width: 640px) {
+  #main {
+    padding: 1em;
+  }
+}
+
+.fake-section {
+  background: #eee;
+  height: 300px;
+}
+
+.tiles-a {
+  margin-top: 75px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+
+
+}
+.tiles-a ul {
+  margin: 0;
+  padding: 0;
+}
+.tiles-a li {
+  list-style: none;
+}
+@media (min-width: 640px) {
+  .tiles-a li {
+    float: left;
+    width: 33.33%;
+  }
+}
+.tiles-a a {
+  margin: 1em;
+  margin-top: 60px;
+  display: block;
+  background: #222;
+  padding-top: 73%;
+  height: 120px;
+  border-radius: 5%;
+  box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.5);
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+
+}
+#aside {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 60%;
+  height: 100%;
+  background: #eee;
+  overflow-y: scroll;
+  z-index: 10;
+}
+#aside img {
+  width: 100%;
+  height: auto;
+  vertical-align: top;
+
+}
+#aside .wrapper {
+  padding: 1em;
+}
+#aside .close {
+  width: 25px;
+  display: block;
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+}
+
+.show-detail {
+  overflow: hidden;
+}
+.show-detail #main {
+  transform: translateX(-60%);
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+
+
+.Icon_wrapper {
+position: absolute;
+left: 530px;
+  list-style: none;
+  ;
+}
+
+.Icon_wrapper .icon {
+  position: relative;
+  background: #ffffff;
+  border-radius: 50%;
+  padding: 15px;
+  margin: 10px;
+  width: 20px;
+  height: 20px;
+  font-size: 18px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.Icon_wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background: #ffffff;
+  color: ##9c8989S;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.Icon_wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: ##9c8989;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.Icon_wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.Icon_wrapper .icon:hover span,
+.Icon_wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
