@@ -22,6 +22,9 @@
         <li><a href="#">Page3</a></li>
       </ul>
     </nav>
+    <div class="">
       <p><?= $data[0]["song_name"]?></p>
+    </div>
+
   </body>
 </html>
