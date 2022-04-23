@@ -9,10 +9,10 @@ private $charset;
 
 //i have removed the credentials to log into the database because i don't think its a good idea to have that on a public github lol.
 public function connect(){
-   $this->db_host = '';
-   $this->db_name = '';
-   $this->db_user = '';
-   $this->db_pass = '';
+    $this->db_host = '';
+    $this->db_name = '';
+    $this->db_user = '';
+    $this->db_pass = '';
    //$this->charset = 'utf8';
    $dsn = 'mysql:host='.$this->db_host.';dbname='.$this->db_name;
 
