@@ -5,7 +5,7 @@ class m_fetch extends Dbh{
     while($row = $stmt->fetch(PDO::FETCH_ASSOC)){
       $results[] = $row;
       }
-      var_dump($results);
+      //var_dump($results);
       return $results;
     }
 
