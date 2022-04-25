@@ -7,8 +7,7 @@
         include 'includes\insert.php';
         include 'includes\m_fetch.php';
 
-        $fetch = new m_fetch;
-        $data = $fetch->getAllMusic();
+
      ?>
     <meta charset="utf-8">
     <title>Website title</title>
@@ -23,7 +22,7 @@
       </ul>
     </nav>
     <div class="">
-      <p><?= $data[0]["song_name"]?></p>
+
     </div>
 
 
