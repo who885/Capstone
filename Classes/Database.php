@@ -1,5 +1,5 @@
 <?php
-
+//same db as before. nothing has changed.
 class Database {
 private $db_host;
 private $db_name;
