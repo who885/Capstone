@@ -65,10 +65,10 @@ $articles4 = Music::getByID($conn, 4);
 </div>
 </div>
 
-<div class="row">
+<div class="row2">
 
-<div class="column">
-<div class="article_1">
+<div class="column2">
+<div class="article_3">
   <a href="#">  <img class="art_3_img" src="<?php echo $articles4->thumb_link; ?>" alt="">
     <div class="center3">
     <h2>Article_3</h2>
