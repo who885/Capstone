@@ -36,13 +36,14 @@
 
 
 <div class="article_1">
-    <img class="art_1_img" src="<?php echo $articles2->thumb_link; ?>" alt="">
+  <a href="#">  <img class="art_1_img" src="<?php echo $articles2->thumb_link; ?>" alt="">
     <div class="center">
     <h2>Article_1</h2>
     <div class="content">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Cras sed nulla pretium, placerat nisl sed, ornare ipsum. Ut et eros eu tellus </p>
     </div>
     </div>
+    </a>
 </div>
 
 
