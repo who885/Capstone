@@ -180,7 +180,7 @@ color: white;
   overflow: hidden;
   width: 800px;
   height: 450px;
-  left: 10%;
+  left: 7%;
   margin-top: 80rem;
   top: 50%;
   background-color: #ffffff;
@@ -344,10 +344,10 @@ color: white;
 
 .con2 {
   position: relative;
-  left: 30px;
-  right: 30px;
-  bottom: 30px;
-  top: 30px;
+  left: 66rem;
+  right: 0px;
+  bottom: 16px;
+  top: 93rem;
 }
 
 .container {
@@ -365,9 +365,8 @@ color: white;
 }
 
 .container img {
-  width: calc(100% - (20px * 0));
-  margin: 10px;
-
+  width: calc(100% - (70px * 5));
+margin: 2px;
 }
 
 /* placeholder color */
