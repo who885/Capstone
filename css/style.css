@@ -100,6 +100,7 @@ text-align: center;
   display: block;
   padding-left: 3rem;
 
+
   /*filter: blur(0.2rem);*/
 }
 .center3 {
@@ -121,8 +122,8 @@ color: white;
   padding-left: 10rem;
   padding-right: 3rem;
   padding-top: 5rem;
-  padding-bottom: 4rem;
-;
+  padding-bottom: 5rem;
+
 
 }
 
@@ -138,10 +139,7 @@ color: white;
 .calendar,:active{
   outline: none;
 }
-.calendar{
-  padding: 0px;
-  margin: 0px;
-}
+
 
 
 
@@ -181,11 +179,12 @@ color: white;
   width: 800px;
   height: 450px;
   left: 7%;
-  margin-top: 64rem;
-  top: 50%;
+  margin-top: 73rem;
+  top: 60%;
   background-color: #ffffff;
   color: #333333;
   padding-bottom: 8rem;
+
 }
 
 .calendar h1, .calendar h2{
