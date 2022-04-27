@@ -181,7 +181,7 @@ color: white;
   width: 800px;
   height: 450px;
   left: 10%;
-  margin-top: 71rem;
+  margin-top: 80rem;
   top: 50%;
   background-color: #ffffff;
   color: #333333;
@@ -344,10 +344,10 @@ color: white;
 
 .con2 {
   position: relative;
-  padding-left: 69rem;
-  padding-right: 10rem;
-  padding-top: 99rem;
-  padding-bottom: 3rem;
+  left: 30px;
+  right: 30px;
+  bottom: 30px;
+  top: 30px;
 }
 
 .container {
@@ -364,11 +364,9 @@ color: white;
 
 }
 
-
 .container img {
   width: calc(100% - (20px * 0));
   margin: 10px;
-
 
 }
 

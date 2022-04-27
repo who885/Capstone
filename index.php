@@ -160,17 +160,17 @@ $articles4 = Music::getByID($conn, 4);
 
    <div class="container">
      <div class="image">
-       <img class="head_img"  src="<?php echo $articles->thumb_link; ?>" alt=""/>
+       <img   src="<?php echo $articles->thumb_link; ?>" alt=""/>
      </div>
      <div class="image">
-      <img class="head_img" src="<?php echo $articles->thumb_link; ?>" alt=""/>
+      <img  src="<?php echo $articles->thumb_link; ?>" alt=""/>
      </div>
      <div class="image">
-       <img class="head_img" src="<?php echo $articles->thumb_link; ?>" alt=""/>
+       <img src="<?php echo $articles->thumb_link; ?>" alt=""/>
      </div>
      <div class="image">
-       <img class="head_img" src="<?php echo $articles->thumb_link; ?>" alt=""/>
-       
+       <img src="<?php echo $articles->thumb_link; ?>" alt=""/>
+
      </div>
    </div>
 </div>
