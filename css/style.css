@@ -105,7 +105,7 @@ text-align: center;
 .center3 {
 position: absolute;
 top: 70%;
-left: 140%;
+left: 123%;
 transform: translate(-60%, -60%);
 color: white;
 }
@@ -181,11 +181,11 @@ color: white;
   width: 800px;
   height: 450px;
   left: 10%;
-
   margin-top: 80rem;
   top: 50%;
   background-color: #ffffff;
   color: #333333;
+  padding-bottom: 8rem;
 }
 
 .calendar h1, .calendar h2{
@@ -207,7 +207,7 @@ color: white;
 }
 
 .calendar .col .content{
-  padding: 40px;
+  padding: 10px;
 }
 
 .calendar ul{
@@ -268,7 +268,7 @@ color: white;
   margin-bottom: 40px;
 }
 
-.calendar .rightCol{
+.rightCol{
   width: 60%;
 }
 
