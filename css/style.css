@@ -181,7 +181,7 @@ color: white;
   width: 800px;
   height: 450px;
   left: 7%;
-  margin-top: 80rem;
+  margin-top: 64rem;
   top: 50%;
   background-color: #ffffff;
   color: #333333;
@@ -365,7 +365,7 @@ color: white;
 }
 
 .container img {
-  width: calc(100% - (70px * 5));
+  width: calc(100% - (115px * 6));
 margin: 2px;
 }
 
