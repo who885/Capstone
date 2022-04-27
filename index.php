@@ -151,12 +151,28 @@ $articles4 = Music::getByID($conn, 4);
          <div class="clearfix"></div>
        </div>
      </div>
-
      <div class="clearfix"></div>
-
    </div>
 
 
+   <div class="con2">
 
+
+   <div class="container">
+     <div class="image">
+       <img   src="<?php echo $articles->thumb_link; ?>" alt=""/>
+     </div>
+     <div class="image">
+      <img  src="<?php echo $articles->thumb_link; ?>" alt=""/>
+     </div>
+     <div class="image">
+       <img src="<?php echo $articles->thumb_link; ?>" alt=""/>
+     </div>
+     <div class="image">
+       <img src="<?php echo $articles->thumb_link; ?>" alt=""/>
+
+     </div>
+   </div>
+</div>
   </body>
 </html>

@@ -1,3 +1,7 @@
+body{
+  zoom: 84%;
+}
+
 .title {
   text-align: center;
 }
@@ -101,7 +105,7 @@ text-align: center;
 .center3 {
 position: absolute;
 top: 70%;
-left: 140%;
+left: 123%;
 transform: translate(-60%, -60%);
 color: white;
 }
@@ -131,36 +135,29 @@ color: white;
 
 
 /* not required */
-*,:active{
+.calendar,:active{
   outline: none;
 }
-*{
+.calendar{
   padding: 0px;
   margin: 0px;
 }
 
-body{
-  margin: 20px;
-  background-color: #EEEDE9;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-  font-size: 96.5%;
+
+
+.calendar input{
   font-family: Helvetica, Arial, sans-serif;
 }
 
-input{
-  font-family: Helvetica, Arial, sans-serif;
-}
-
-h1, h2, h3, h4, h5, p{
+.calendar h1, h2, h3, h4, h5, p{
   margin-bottom: 10px;
 }
 
-p{
+.calendar p{
   line-height: 20px;
 }
 
-a{
+.calendar a{
   text-decoration: none;
   color: #FF462B;
 }
@@ -184,11 +181,11 @@ a{
   width: 800px;
   height: 450px;
   left: 10%;
-
   margin-top: 80rem;
   top: 50%;
   background-color: #ffffff;
   color: #333333;
+  padding-bottom: 8rem;
 }
 
 .calendar h1, .calendar h2{
@@ -210,7 +207,7 @@ a{
 }
 
 .calendar .col .content{
-  padding: 40px;
+  padding: 10px;
 }
 
 .calendar ul{
@@ -271,7 +268,7 @@ a{
   margin-bottom: 40px;
 }
 
-.calendar .rightCol{
+.rightCol{
   width: 60%;
 }
 
@@ -345,6 +342,33 @@ a{
   color: #F5A1A3;
 }
 
+.con2 {
+  position: relative;
+  left: 30px;
+  right: 30px;
+  bottom: 30px;
+  top: 30px;
+}
+
+.container {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+
+
+}
+
+
+.container .image {
+  width: 50%;
+
+}
+
+.container img {
+  width: calc(100% - (20px * 0));
+  margin: 10px;
+
+}
 
 /* placeholder color */
 ::-webkit-input-placeholder {color: #ffffff; }
