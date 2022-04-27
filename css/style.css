@@ -181,7 +181,7 @@ color: white;
   width: 800px;
   height: 450px;
   left: 10%;
-  margin-top: 80rem;
+  margin-top: 71rem;
   top: 50%;
   background-color: #ffffff;
   color: #333333;
@@ -342,6 +342,35 @@ color: white;
   color: #F5A1A3;
 }
 
+.con2 {
+  position: relative;
+  padding-left: 69rem;
+  padding-right: 10rem;
+  padding-top: 99rem;
+  padding-bottom: 3rem;
+}
+
+.container {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+
+
+}
+
+
+.container .image {
+  width: 50%;
+
+}
+
+
+.container img {
+  width: calc(100% - (20px * 0));
+  margin: 10px;
+
+
+}
 
 /* placeholder color */
 ::-webkit-input-placeholder {color: #ffffff; }
