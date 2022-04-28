@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/article.css">
     <?php
     require 'Classes\Music.php';
     require 'Classes\Lyrics.php';
@@ -27,6 +28,21 @@ $articles = Music::getByID($conn, 1);
         <img class="head_img" src="<?php echo $articles->thumb_link; ?>" alt="">
         </div>
     </nav>
+
+
+<div class="flexbox_container">
+  <div class="flexbox-item flexbox-item-1">
+      <a href="#"><h1>Lyrics</h1></a>
+  </div>
+  <div class="flexbox-item flexbox-item-2">
+      <a href="<?php echo $articles->platform_2; ?>"><img class="image" src="images/itunes.png" alt="itunes"></a>
+  </div>
+  <div class="flexbox-item flexbox-item-2">
+    <a href="<?php echo $articles->platform_1; ?>"><img class="image" src="images/amazon_music.png" alt="amazon music"></a>
+  </div>
+  <div class="flexbox-item flexbox-item-2">
+    <a href="<?php echo "#"; ?>"><img class="image" src="images/pandora.jpg" alt="Pandora"></a>
+</div>
 
 
 
