@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/article.css">
     <?php
     require 'Classes\Music.php';
     require 'Classes\Lyrics.php';
@@ -9,13 +10,8 @@
     require 'Classes\Dates.php';
     require 'Classes\Database.php';
     $conn = require  'includes\db.php';
-    $articles = Music::getByID($conn, 1);
-    $articles2 = Music::getByID($conn, 2);
-  //  $lyrics = Lyrics::getByID($conn, 1);
-  //  $dates = Dates::getByID($conn, 1);
-  //  $translated = Translated::getByID($conn, 1);
-$articles3 = Music::getByID($conn, 3);
-$articles4 = Music::getByID($conn, 4);
+
+$articles = Music::getByID($conn, 1);
      ?>
     <meta charset="utf-8">
     <title>Website title</title>
@@ -35,6 +31,31 @@ $articles4 = Music::getByID($conn, 4);
 
 
 
+    <div class="row">
+
+    <div class="column">
+    <div class="article_1">
+      <a href="#">  <img class="" src="images/amazon_music.png" alt=""></a>
+    </div></div>
+
+
+    <div class="column">
+
+
+    <div class="article_2">
+      <a href="#">  <img class="" src="images/pandora.jpg" alt=""></a>
+    </div>
+    </div>
+
+    <div class="column">
+
+
+    <div class="article_2">
+      <a href="#">  <img class="" src="images/pandora.jpg" alt=""></a>
+    </div>
+    </div>
+
+    </div>
 
 
   </body>
