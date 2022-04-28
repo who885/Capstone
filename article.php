@@ -30,22 +30,32 @@ $articles = Music::getByID($conn, 1);
     </nav>
 
 
-<div class="flexbox_container">
-  <div class="flexbox-item flexbox-item-1">
-      <a href="#"><h1>Lyrics</h1></a>
-  </div>
-  <div class="flexbox-item flexbox-item-2">
-      <a href="<?php echo $articles->platform_2; ?>"><img class="image" src="images/itunes.png" alt="itunes"></a>
-  </div>
-  <div class="flexbox-item flexbox-item-2">
-    <a href="<?php echo $articles->platform_1; ?>"><img class="image" src="images/amazon_music.png" alt="amazon music"></a>
-  </div>
-  <div class="flexbox-item flexbox-item-2">
-    <a href="<?php echo "#"; ?>"><img class="image" src="images/pandora.jpg" alt="Pandora"></a>
-</div>
+
+    <div class="row">
+
+    <div class="column">
+    <div class="article_1">
+      <a href="#">  <img class="" src="images/amazon_music.png" alt=""></a>
+    </div></div>
 
 
+    <div class="column">
 
+
+    <div class="article_2">
+      <a href="#">  <img class="" src="images/pandora.jpg" alt=""></a>
+    </div>
+    </div>
+
+    <div class="column">
+
+
+    <div class="article_2">
+      <a href="#">  <img class="" src="images/pandora.jpg" alt=""></a>
+    </div>
+    </div>
+
+    </div>
 
 
   </body>
