@@ -1,6 +1,6 @@
 <?php
-
-class Dbh {
+//same db as before. nothing has changed.
+class Database {
 private $db_host;
 private $db_name;
 private $db_user;
@@ -8,12 +8,12 @@ private $db_pass;
 private $charset;
 
 //i have removed the credentials to log into the database because i don't think its a good idea to have that on a public github lol.
-public function connect(){
-   $this->db_host = '';
-   $this->db_name = '';
-   $this->db_user = '';
-   $this->db_pass = '';
-   //$this->charset = 'utf8';
+public function getConn(){
+  $this->db_host = 'sql5.freemysqlhosting.net:3306';
+  $this->db_name = 'sql5481555';
+  $this->db_user = 'sql5481555';
+  $this->db_pass = 'w19w51fH6x';
+  $this->charset = 'utf8';
    $dsn = 'mysql:host='.$this->db_host.';dbname='.$this->db_name;
 
   try{
@@ -23,7 +23,7 @@ public function connect(){
       $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
 
        return $db;
-       echo "connection successful!";
+
      }catch(PDOException $e){
 
           echo "Connection Failed: ". $e->getMessage();
@@ -32,7 +32,3 @@ public function connect(){
       }
 }
 }
-/*   $this->db_host = 'localhost';
-   $this->db_name = 'music';
-   $this->db_user = 'root';
-   $this->db_pass = 'password!123';*/

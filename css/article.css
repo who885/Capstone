@@ -1,0 +1,30 @@
+
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+
+.description {
+  text-align: center;
+  font-size: 30px;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+.mainimage {
+
+ margin-left: auto;
+ margin-right: auto;
+ width: 25%;
+}
+
+.image {
+  width: 200px;
+  height: 200px;
+}
