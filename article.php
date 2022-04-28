@@ -9,13 +9,8 @@
     require 'Classes\Dates.php';
     require 'Classes\Database.php';
     $conn = require  'includes\db.php';
-    $articles = Music::getByID($conn, 1);
-    $articles2 = Music::getByID($conn, 2);
-  //  $lyrics = Lyrics::getByID($conn, 1);
-  //  $dates = Dates::getByID($conn, 1);
-  //  $translated = Translated::getByID($conn, 1);
-$articles3 = Music::getByID($conn, 3);
-$articles4 = Music::getByID($conn, 4);
+
+$articles = Music::getByID($conn, 1);
      ?>
     <meta charset="utf-8">
     <title>Website title</title>
