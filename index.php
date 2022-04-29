@@ -15,9 +15,10 @@
     $articles = Music::getByID($conn, 1);
     $articles2 = Music::getByID($conn, 2);
   //  $lyrics = Lyrics::getByID($conn, 1);
-    $dates = Dates::getByID($conn, 1);
-    $dates2 = Dates::getByID($conn, 2);
-    $dates3 = Dates::getByID($conn, 3);
+  $dates = Dates::getByID($conn, 1);
+  $dates4 = Dates::getByID($conn, 21);
+  $dates5 = Dates::getByID($conn, 22);
+  $dates7 = Dates::getByID($conn, 27);
   //  $translated = Translated::getByID($conn, 1);
 $articles3 = Music::getByID($conn, 3);
 $articles4 = Music::getByID($conn, 4);
@@ -106,20 +107,27 @@ $articles4 = Music::getByID($conn, 4);
 
 
 
+
+
 <div class="calendar">
 
      <div class="col leftCol">
        <div class="content">
-         <h1 class="date">Thursday<span>December 25th</span></h1>
+         <h1 class="date">Friday<span>September 12th</span></h1>
          <div class="notes">
            <p>
-             <input type="text" value="" placeholder="new note"/>
+             <input type="text" value="" placeholder="Cool Dates in Music History!"/>
              <a href="#" title="Add note" class="addNote animate">+</a>
            </p>
            <ul class="noteList">
              <li><?php echo $dates->name; ?><a href="#" title="Remove note" class="removeNote animate">x</a></li>
-             <li><?php echo $dates2->name; ?><a href="#" title="Remove note" class="removeNote animate">x</a></li>
-             <li><?php echo $dates3->name; ?><a href="#" title="Remove note" class="removeNote animate">x</a></li>
+             <p> Mariah Carey's All I Want For Christmas Is You song is released.</p>
+             <li><?php echo $dates4->name; ?><a href="#" title="Remove note" class="removeNote animate">x</a></li>
+             <p>On this day, Beyonce's sister attacked Jay-Z on the way to the Met Gala at The Standard hotel in New York.</p>
+             <li><?php echo $dates5->name; ?><a href="#" title="Remove note" class="removeNote animate">x</a></li>
+             <p>On this day, the Beatles set a recording industry record that may never be equaled.</p>
+             <li><?php echo $dates7->name; ?><a href="#" title="Remove note" class="removeNote animate">x</a></li>
+            <p> Led Zeppelin II was released in the UK. </p>
            </ul>
          </div>
        </div>
@@ -157,7 +165,8 @@ $articles4 = Music::getByID($conn, 4);
            <script>
              for( var _i = 1; _i <= 30; _i += 1 ){
                var _addClass = '';
-               if( _i === 25 ){ _addClass = ' class="selected"'; }
+               if( _i === 12 ){ _addClass = ' class="selected"'; }
+               //else if( _i === 11 ){ _addClass = ' class="selected"'; }
 
                switch( _i ){
                  case 8:
@@ -176,6 +185,7 @@ $articles4 = Music::getByID($conn, 4);
      </div>
      <div class="clearfix"></div>
    </div>
+
 
 
    <div class="con2">
