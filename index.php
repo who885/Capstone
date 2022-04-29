@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
     <?php
     require 'Classes\Music.php';
@@ -12,7 +15,9 @@
     $articles = Music::getByID($conn, 1);
     $articles2 = Music::getByID($conn, 2);
   //  $lyrics = Lyrics::getByID($conn, 1);
-  //  $dates = Dates::getByID($conn, 1);
+    $dates = Dates::getByID($conn, 1);
+    $dates2 = Dates::getByID($conn, 2);
+    $dates3 = Dates::getByID($conn, 3);
   //  $translated = Translated::getByID($conn, 1);
 $articles3 = Music::getByID($conn, 3);
 $articles4 = Music::getByID($conn, 4);
@@ -23,13 +28,17 @@ $articles4 = Music::getByID($conn, 4);
   <body>
     <nav class="topnav">
       <ul>
-        <li>Website Name</li>
+        <li class="website_name">Website Name</li>
         <li><a href="index.php">Home</a></li>
-        <li><a href="#">Page2</a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#">page4</a></li>
         <li><a href="#">Page3</a></li>
       </ul>
       <div class="Shadow">
-        <img class="head_img" src="<?php echo $articles->thumb_link; ?>" alt="">
+        <img class="head_img" src="https://www.magix.com/fileadmin/user_upload/SEO/Music/Organize-music/i_562531/organize-music-header-mobile-int.jpg" alt="">
         </div>
     </nav>
 
@@ -41,14 +50,26 @@ $articles4 = Music::getByID($conn, 4);
   <a href="#">  <img class="art_1_img" src="<?php echo $articles2->thumb_link; ?>" alt="">
     <div class="center">
     <h2>Article_1</h2>
-    <div class="content">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Cras sed nulla pretium, placerat nisl sed, ornare ipsum. Ut et eros eu tellus </p>
+    <div class="content1">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Cras sed nulla pretium, placerat nisl sed, ornare ipsum. Ut et eros eu telluLorem ipsum dolor sit amet, consectetur adipiscing elit.Cras sed nulla pretium, placerat nisl sed, ornare ipsum. Ut et eros eu tellus </p>
     </div>
     </div>
     </a>
 </div></div>
 
 
+
+<div class="column">
+<div class="article_1">
+  <a href="#">  <img class="art_1_img" src="<?php echo $articles2->thumb_link; ?>" alt="">
+    <div class="center">
+    <h2>Article_1</h2>
+    <div class="content2">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Cras sed nulla pretium, placerat nisl sed, ornare ipsum. Ut et eros eu tellus </p>
+    </div>
+    </div>
+    </a>
+</div></div>
 <div class="column">
 
 
@@ -96,7 +117,9 @@ $articles4 = Music::getByID($conn, 4);
              <a href="#" title="Add note" class="addNote animate">+</a>
            </p>
            <ul class="noteList">
-             <li>Insert Date details here<a href="#" title="Remove note" class="removeNote animate">x</a></li>
+             <li><?php echo $dates->name; ?><a href="#" title="Remove note" class="removeNote animate">x</a></li>
+             <li><?php echo $dates2->name; ?><a href="#" title="Remove note" class="removeNote animate">x</a></li>
+             <li><?php echo $dates3->name; ?><a href="#" title="Remove note" class="removeNote animate">x</a></li>
            </ul>
          </div>
        </div>
@@ -159,18 +182,17 @@ $articles4 = Music::getByID($conn, 4);
 
 
    <div class="container">
-     <div class="image">
+     <div class="image_1">
        <img   src="<?php echo $articles->thumb_link; ?>" alt=""/>
      </div>
-     <div class="image">
+     <div class="image_2" >
       <img  src="<?php echo $articles->thumb_link; ?>" alt=""/>
      </div>
-     <div class="image">
+     <div class="image_3" >
        <img src="<?php echo $articles->thumb_link; ?>" alt=""/>
      </div>
-     <div class="image">
+     <div class="image_4">
        <img src="<?php echo $articles->thumb_link; ?>" alt=""/>
-
      </div>
    </div>
 </div>
