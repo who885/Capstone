@@ -22,7 +22,7 @@
 $articles3 = Music::getByID($conn, 3);
 $articles4 = Music::getByID($conn, 4);
      ?>
-    <meta charset="utf-8">
+    <meta charset="utf-8"> 
     <title>Website title</title>
   </head>
   <body>
