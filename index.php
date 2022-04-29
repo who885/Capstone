@@ -22,6 +22,7 @@
   //  $translated = Translated::getByID($conn, 1);
 $articles3 = Music::getByID($conn, 3);
 $articles4 = Music::getByID($conn, 4);
+$articles5 = Music::getByID($conn, 5);
      ?>
     <meta charset="utf-8">
     <title>Website title</title>
@@ -62,9 +63,9 @@ $articles4 = Music::getByID($conn, 4);
 
 <div class="column">
 <div class="article_1">
-  <a href="#">  <img class="art_1_img" src="<?php echo $articles2->thumb_link; ?>" alt="">
+  <a href="#">  <img class="art_1_img" src="<?php echo $articles5->thumb_link; ?>" alt="">
     <div class="center">
-    <h2>Article_1</h2>
+    <h2>Article_2</h2>
     <div class="content2">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Cras sed nulla pretium, placerat nisl sed, ornare ipsum. Ut et eros eu tellus </p>
     </div>
@@ -77,7 +78,7 @@ $articles4 = Music::getByID($conn, 4);
 <div class="article_2">
   <a href="#">  <img class="art_2_img" src="<?php echo $articles3->thumb_link; ?>" alt="">
     <div class="center">
-    <h2>Article_2</h2>
+    <h2>Article_3</h2>
     <div class="content">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Cras sed nulla pretium, placerat nisl sed, ornare ipsum. Ut et eros eu tellus </p>
     </div>
