@@ -5,7 +5,7 @@
 
 body{
 width: 1920px;
-background: url("images/bluetest.jpg")
+background: url("/images/bluetest.jpg")
 }
 .topnav{
   width: 1920px;
@@ -246,31 +246,6 @@ width:850px;
 
 
 border-color: black;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
