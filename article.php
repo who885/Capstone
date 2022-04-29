@@ -15,12 +15,12 @@ $articles = Music::getByID($conn, 1);
 $lyrics = lyrics::getByID($conn, 16);
      ?>
     <meta charset="utf-8">
-    <title>Website title</title>
+    <title>Media Music</title>
   </head>
   <body>
     <nav class="topnav">
       <ul>
-        <li>Website Name</li>
+        <li>Media M</li>
         <li><a href="index.php">Home</a></li>
         <li><a href="#">Page2</a></li>
         <li><a href="#">Page3</a></li>
@@ -31,17 +31,21 @@ $lyrics = lyrics::getByID($conn, 16);
     </nav>
 
     <div class="row">
+
+      <div class="column">
+    <div class="article_1">
+      <a href="#">  <img class="image" src="images/google.png" alt=""></a>
+    </div></div>
+
       <div class="column">
     <div class="article_1">
       <a href="#">  <img class="image" src="images/amazon_music.png" alt=""></a>
     </div></div>
 
-
     <div class="column">
     <div class="article_2">
       <a href="#">  <img class="image" src="images/pandora.jpg" alt=""></a>
     </div></div>
-
 
     <div class="column">
     <div class="article_2">

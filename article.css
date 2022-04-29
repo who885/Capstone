@@ -11,7 +11,7 @@
 }
 
 .topnav {
-  font-size: 50px;
+  font-size: 150px;
 }
 
 .description {
@@ -29,6 +29,6 @@ display: block;
 }
 
 .image {
-  width: 200px;
-  height: 200px;
+  width: 130px;
+  height: 130px;
 }
