@@ -22,7 +22,7 @@
 $articles3 = Music::getByID($conn, 3);
 $articles4 = Music::getByID($conn, 4);
      ?>
-    <meta charset="utf-8"> 
+    <meta charset="utf-8">
     <title>Website title</title>
   </head>
   <body>
@@ -110,7 +110,7 @@ $articles4 = Music::getByID($conn, 4);
 
      <div class="col leftCol">
        <div class="content">
-         <h1 class="date">Friday<span>September 12th</span></h1>
+         <h1 class="date">Thursday<span>December 25th</span></h1>
          <div class="notes">
            <p>
              <input type="text" value="" placeholder="new note"/>
@@ -157,7 +157,7 @@ $articles4 = Music::getByID($conn, 4);
            <script>
              for( var _i = 1; _i <= 30; _i += 1 ){
                var _addClass = '';
-               if( _i === 12 ){ _addClass = ' class="selected"'; }
+               if( _i === 25 ){ _addClass = ' class="selected"'; }
 
                switch( _i ){
                  case 8:
