@@ -12,7 +12,8 @@
     $articles = Music::getByID($conn, 1);
     $articles2 = Music::getByID($conn, 2);
   //  $lyrics = Lyrics::getByID($conn, 1);
-  //  $dates = Dates::getByID($conn, 1);
+    $dates = Dates::getByID($conn, 1);
+    $dates2 = Dates::getByID($conn, 2);
   //  $translated = Translated::getByID($conn, 1);
 $articles3 = Music::getByID($conn, 3);
 $articles4 = Music::getByID($conn, 4);
@@ -96,7 +97,8 @@ $articles4 = Music::getByID($conn, 4);
              <a href="#" title="Add note" class="addNote animate">+</a>
            </p>
            <ul class="noteList">
-             <li>Insert Date details here<a href="#" title="Remove note" class="removeNote animate">x</a></li>
+             <li><?php echo $dates->name; ?><a href="#" title="Remove note" class="removeNote animate">x</a></li>
+             <li><?php echo $dates2->name; ?><a href="#" title="Remove note" class="removeNote animate">x</a></li>
            </ul>
          </div>
        </div>
@@ -159,18 +161,17 @@ $articles4 = Music::getByID($conn, 4);
 
 
    <div class="container">
-     <div class="image">
+     <div class="image_1">
        <img   src="<?php echo $articles->thumb_link; ?>" alt=""/>
      </div>
-     <div class="image">
+     <div class="image_2" >
       <img  src="<?php echo $articles->thumb_link; ?>" alt=""/>
      </div>
-     <div class="image">
+     <div class="image_3" >
        <img src="<?php echo $articles->thumb_link; ?>" alt=""/>
      </div>
-     <div class="image">
+     <div class="image_4">
        <img src="<?php echo $articles->thumb_link; ?>" alt=""/>
-
      </div>
    </div>
 </div>

@@ -1,5 +1,5 @@
 body{
-  zoom: 84%;
+
 }
 
 .title {
@@ -83,8 +83,19 @@ text-align: center;
   padding-right: 3rem;
   padding-top: 10rem;
   padding-bottom: 4rem;
+
+
+
+
+
 }
 
+
+
+
+.row{
+
+}
 /* Clear floats after image containers */
 .row::after {
 
@@ -177,7 +188,7 @@ color: white;
   border-radius: 4px;
   overflow: hidden;
   width: 800px;
-  height: 450px;
+  height: 550px;
   left: 7%;
   margin-top: 73rem;
   top: 60%;
@@ -338,7 +349,7 @@ color: white;
 }
 
 .calendar .days li .event{
-  color: #F5A1A3;
+  color: black;
 }
 
 .con2 {
@@ -351,21 +362,46 @@ color: white;
 
 .container {
   position: absolute;
-  display: flex;
-  flex-wrap: wrap;
+
+
+height:500px;
+width: 750px;
+
+}
+
+.container .image_1{
+
+  width: 30%;
+padding-bottom: 23px;
+
+}
+.container .image_2{
+
+  width: 35%;
 
 
 }
+.container .image_3{
+  position: absolute;
+   top: 0px;
+   left: 330px;
 
+  width: 30%;
 
-.container .image {
-  width: 50%;
 
 }
+.container .image_4{
+
+  width: 30%;
+  position: absolute;
+   top: 327px;
+   left: 330px;
+
+}
+
 
 .container img {
-  width: calc(100% - (115px * 6));
-margin: 2px;
+width: 300px;
 }
 
 /* placeholder color */
