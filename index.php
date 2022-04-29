@@ -23,6 +23,8 @@
 $articles3 = Music::getByID($conn, 3);
 $articles4 = Music::getByID($conn, 4);
 $articles5 = Music::getByID($conn, 5);
+$articles6 = Music::getByID($conn, 6);
+$articles7 = Music::getByID($conn, 7);
      ?>
     <meta charset="utf-8">
     <title>Website title</title>
@@ -194,13 +196,13 @@ $articles5 = Music::getByID($conn, 5);
 
    <div class="container">
      <div class="image_1">
-       <img   src="<?php echo $articles->thumb_link; ?>" alt=""/>
+       <img   src="<?php echo $articles5->thumb_link; ?>" alt=""/>
      </div>
      <div class="image_2" >
-      <img  src="<?php echo $articles->thumb_link; ?>" alt=""/>
+      <img  src="<?php echo $articles6->thumb_link; ?>" alt=""/>
      </div>
      <div class="image_3" >
-       <img src="<?php echo $articles->thumb_link; ?>" alt=""/>
+       <img src="<?php echo $articles7->thumb_link; ?>" alt=""/>
      </div>
      <div class="image_4">
        <img src="<?php echo $articles->thumb_link; ?>" alt=""/>
