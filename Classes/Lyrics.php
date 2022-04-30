@@ -8,7 +8,7 @@ public $lyrics;
 public static function getAll($conn)
 {
   $sql = "SELECT *
-      FROM lyrics
+      FROM geniuslyrics
       ORDER BY id;";
 
   $results = $conn->query($sql);
