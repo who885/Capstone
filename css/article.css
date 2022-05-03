@@ -1,22 +1,146 @@
+body{
+width: 1920px;
+background: url("bluetest.jpg");
+}
+
+.topnav ul {
+  list-style-type: none;
+  overflow: hidden;
+  height: 75px;
+  position: absolute;
+  top: -140px;
+  margin-left: ;
+
+}
+
+.topnav ul li {
+color: #434878;
+  text-align: center;
+
+
+border-radius: 10%;
+width: 150px;
+  height: 25px;
+font-family: 'Fjalla One', sans-serif;
+
+font-size: 30px;
+ text-shadow: 1px 1px #a0b7e0;
+
+}
+
+
+
+.topnav ul li a:link{
+  color: #434878;
+  text-decoration: none;
+
+}
+
+
+
+.topnav ul li a:visited{
+  color: #434878;
+}
+
+
+
+
+.topnav ul li a:hover{
+  color: #ff8b86;
+  text-decoration: none;
+
+}
+
+
+
+
+.topnav ul li {
+  float: left;
+  margin-right: 1rem;
+
+
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.head_img {
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 110%;
+
+  border-bottom: solid;
+  height: 400px;
+  display: block;
+margin-bottom: -100px;
+}
+
+.Shadow {
+margin-left: -10px;
+top: 100px;
+}
+
+
+
+
+.article_1{
+  margin-top: 200px;
+  margin-left: 125px;
+}
+
+
+.button{
+width:155px;
+height: 40px;
+background-color: white;
+border-style: solid;
+border-radius: 5%;
+position: absolute;
+top: 900px;
+left: 300px;
+}
+
+.Trasnlate{
+  margin-left: 10px;
+  font-size: 2rem;
+  font-family: 'Fjalla One', sans-serif;
+  text-decoration: none;
+}
+
 
 
 /* Three image containers (use 25% for four, and 50% for two, etc) */
+.row {
+  display: flex;
+}
+
 .column {
-  float: left;
-  width: 33.33%;
-
+  flex: 33.33%;
+  padding: 5px;
 }
 
-/* Clear floats after image containers */
-.row::after {
-
-  clear: both;
-  display: table;
+.topnav {
+  font-size: 150px;
 }
 
+.description {
+  text-align: center;
+  font-size: 30px;
+  padding-left: 200px;
+  padding-right: 200px;
+}
 
+.mainimage {
+display: block;
+ margin-left: 700px;
+ margin-top: 50px;
 
+ width: 5%;
+}
 
-.album-cover {
-  padding: 150px;
+.image {
+  width: 130px;
+  height: 130px;
 }

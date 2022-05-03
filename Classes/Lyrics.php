@@ -8,7 +8,7 @@ public $lyrics;
 public static function getAll($conn)
 {
   $sql = "SELECT *
-      FROM geniuslyrics
+      FROM lyrics
       ORDER BY id;";
 
   $results = $conn->query($sql);
@@ -23,7 +23,7 @@ public static function getAll($conn)
 public static function getByID($conn, $id, $columns = '*')
 {
     $sql = "SELECT $columns
-        FROM lyrics
+        FROM geniuslyrics
         WHERE id = :id";
 
     $stmt = $conn->prepare($sql);
