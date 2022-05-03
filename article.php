@@ -1,11 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-<<<<<<< HEAD
-    <link rel="stylesheet" href="/css/style.css">
-=======
     <link rel="stylesheet" href="/css/article.css">
->>>>>>> Capstone_Development
     <?php
     require 'Classes\Music.php';
     require 'Classes\Lyrics.php';
@@ -13,27 +9,11 @@
     require 'Classes\Dates.php';
     require 'Classes\Database.php';
     $conn = require  'includes\db.php';
-<<<<<<< HEAD
-<<<<<<< HEAD
-    $articles = Music::getByID($conn, 1);
-    $articles2 = Music::getByID($conn, 2);
-  //  $lyrics = Lyrics::getByID($conn, 1);
-  //  $dates = Dates::getByID($conn, 1);
-  //  $translated = Translated::getByID($conn, 1);
-$articles3 = Music::getByID($conn, 3);
-$articles4 = Music::getByID($conn, 4);
-=======
-//$conn needs to be in there, the number corresponds to the id number in the tables. 
-$articles = Music::getByID($conn, 4);
-$lyrics = lyrics::getByID($conn, 16);
->>>>>>> Capstone_Development
-=======
 //$conn needs to be in there, the number corresponds to the id number in the tables.
 
 $articles = Music::getByID($conn, 4);
 $lyrics = lyrics::getByID($conn, 10);
 $translate = Translated::getByID($conn,1);
->>>>>>> Capstone_Development
      ?>
     <meta charset="utf-8">
     <title>Media Music</title>
@@ -55,8 +35,6 @@ $translate = Translated::getByID($conn,1);
       </div>
   </nav>
 
-<<<<<<< HEAD
-=======
     <div class="row">
 
       <div class="column">
@@ -96,7 +74,6 @@ $translate = Translated::getByID($conn,1);
 </span>
 </div>
 
->>>>>>> Capstone_Development
 
 
   </body>
