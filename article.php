@@ -12,7 +12,7 @@
 //$conn needs to be in there, the number corresponds to the id number in the tables.
 
 $articles = Music::getByID($conn, 4);
-$lyrics = lyrics::getByID($conn, 16);
+$lyrics = lyrics::getByID($conn, 10);
 $translate = Translated::getByID($conn,1);
      ?>
     <meta charset="utf-8">
