@@ -97,7 +97,7 @@ $articles7 = Music::getByID($conn, 7);
   <!--this is how you link your article page!-->
   <a href="article.php">  <img class="art_3_img" src="<?php echo $articles4->thumb_link; ?>" alt="">
     <div class="center3">
-    <h2>Article_3</h2>
+    <h2>Article_4</h2>
     <div class="content3">
       <p> Sed quis sem et ex dapibus volutpat vitae consequat eros. Aenean euismod odio nec orci rutrum vulputate. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec consequat orci et semper posuere. Duis posuere massa at feugiat tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel turpis quis ex pretium accumsan vitae dictum quam. Sed iaculis elit
        </p>

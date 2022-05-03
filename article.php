@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+<<<<<<< HEAD
     <link rel="stylesheet" href="/css/style.css">
+=======
+    <link rel="stylesheet" href="/css/article.css">
+>>>>>>> Capstone_Development
     <?php
     require 'Classes\Music.php';
     require 'Classes\Lyrics.php';
@@ -9,6 +13,7 @@
     require 'Classes\Dates.php';
     require 'Classes\Database.php';
     $conn = require  'includes\db.php';
+<<<<<<< HEAD
 <<<<<<< HEAD
     $articles = Music::getByID($conn, 1);
     $articles2 = Music::getByID($conn, 2);
@@ -21,6 +26,13 @@ $articles4 = Music::getByID($conn, 4);
 //$conn needs to be in there, the number corresponds to the id number in the tables. 
 $articles = Music::getByID($conn, 4);
 $lyrics = lyrics::getByID($conn, 16);
+>>>>>>> Capstone_Development
+=======
+//$conn needs to be in there, the number corresponds to the id number in the tables.
+
+$articles = Music::getByID($conn, 4);
+$lyrics = lyrics::getByID($conn, 10);
+$translate = Translated::getByID($conn,1);
 >>>>>>> Capstone_Development
      ?>
     <meta charset="utf-8">
@@ -49,22 +61,17 @@ $lyrics = lyrics::getByID($conn, 16);
 
       <div class="column">
     <div class="article_1">
-      <a href="#">  <img class="image" src="images/google.png" alt=""></a>
-    </div></div>
-
-      <div class="column">
-    <div class="article_1">
-      <a href="#">  <img class="image" src="images/amazon_music.png" alt=""></a>
+      <a href="<?php echo $articles->platform_1; ?>">  <img class="image" src="images/amazon_music.png" alt=""></a>
     </div></div>
 
     <div class="column">
     <div class="article_1">
-      <a href="#">  <img class="image" src="images/pandora.jpg" alt=""></a>
+      <a href="<?php echo $articles->platform_2; ?>">  <img class="image" src="images/pandora.jpg" alt=""></a>
     </div></div>
 
     <div class="column">
     <div class="article_1">
-      <a href="#">  <img class="image" src="images/itunes.png" alt=""></a>
+      <a href="<?php echo $articles->platform_3; ?>">  <img class="image" src="images/itunes.png" alt=""></a>
     </div></div>
 
   </div>
@@ -73,8 +80,6 @@ $lyrics = lyrics::getByID($conn, 16);
 </div>
 
     <div class="mainimage">
-      <!--make sure your thumbnail link matches the review your doing. so you can get the correct thumnail-->
-      <!--look at the music table and then add the correct id to the function that articles is being set to.-->
     <img class="Main Image" src="<?php echo $articles->thumb_link; ?>" alt="">
 </div>
 
@@ -84,7 +89,6 @@ $lyrics = lyrics::getByID($conn, 16);
   </div>
 
   <div class="lyrics">
-      <!--same thing as the getting the articles image. please review the lyrics table to get the correct lyrics!-->
     <?php $str = $lyrics->lyrics; ?>
   <span>
   <a href="http://www.<?php echo $str ?>"><img src="images/genius.png" style = "display: block; width: 200px; margin-left: auto;
