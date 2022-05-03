@@ -9,6 +9,7 @@
     require 'Classes\Dates.php';
     require 'Classes\Database.php';
     $conn = require  'includes\db.php';
+<<<<<<< HEAD
     $articles = Music::getByID($conn, 1);
     $articles2 = Music::getByID($conn, 2);
   //  $lyrics = Lyrics::getByID($conn, 1);
@@ -16,25 +17,82 @@
   //  $translated = Translated::getByID($conn, 1);
 $articles3 = Music::getByID($conn, 3);
 $articles4 = Music::getByID($conn, 4);
+=======
+//$conn needs to be in there, the number corresponds to the id number in the tables. 
+$articles = Music::getByID($conn, 4);
+$lyrics = lyrics::getByID($conn, 16);
+>>>>>>> Capstone_Development
      ?>
     <meta charset="utf-8">
-    <title>Website title</title>
+    <title>Media Music</title>
   </head>
   <body>
     <nav class="topnav">
-      <ul>
-        <li>Website Name</li>
-        <li><a href="index.php">Home</a></li>
-        <li><a href="#">Page2</a></li>
-        <li><a href="#">Page3</a></li>
-      </ul>
-      <div class="Shadow">
-        <img class="head_img" src="<?php echo $articles->thumb_link; ?>" alt="">
-        </div>
-    </nav>
+    <ul>
+      <li class="website_name">Media Music</li>
+      <li><a href="index.php">Home</a></li>
+      <li><a href="#"></a></li>
+      <li><a href="#"></a></li>
+      <li><a href="#"></a></li>
+      <li><a href="#"></a></li>
+      <li><a href="#">Page4</a></li>
+      <li><a href="#">Page3</a></li>
+    </ul>
+    <div class="Shadow">
+      <img class="head_img" src="https://www.magix.com/fileadmin/user_upload/SEO/Music/Organize-music/i_562531/organize-music-header-mobile-int.jpg" alt="">
+      </div>
+  </nav>
 
+<<<<<<< HEAD
+=======
+    <div class="row">
 
+      <div class="column">
+    <div class="article_1">
+      <a href="#">  <img class="image" src="images/google.png" alt=""></a>
+    </div></div>
 
+      <div class="column">
+    <div class="article_1">
+      <a href="#">  <img class="image" src="images/amazon_music.png" alt=""></a>
+    </div></div>
+
+    <div class="column">
+    <div class="article_1">
+      <a href="#">  <img class="image" src="images/pandora.jpg" alt=""></a>
+    </div></div>
+
+    <div class="column">
+    <div class="article_1">
+      <a href="#">  <img class="image" src="images/itunes.png" alt=""></a>
+    </div></div>
+
+  </div>
+<div class="button">
+<a href="#" class="Trasnlate">Translate</a>
+</div>
+
+    <div class="mainimage">
+      <!--make sure your thumbnail link matches the review your doing. so you can get the correct thumnail-->
+      <!--look at the music table and then add the correct id to the function that articles is being set to.-->
+    <img class="Main Image" src="<?php echo $articles->thumb_link; ?>" alt="">
+</div>
+
+    <div class="description">
+    <b>Title</b>
+    <p>"Ut sodales, sapien non sagittis rutrum, lorem ante placerat est, id porttitor enim diam at dui. Cras laoreet dapibus dolor a auctor. Morbi sollicitudin, nisl nec fermentum condimentum, odio ex rutrum arcu, quis dapibus mi massa ut lacus. Suspendisse a scelerisque leo. Suspendisse vel eros sed dolor volutpat bibendum. Quisque blandit gravida libero, eu tincidunt massa cursus non. Donec euismod, dui in facilisis fringilla, velit felis consequat enim, ut fringilla nunc turpis vitae nibh. Nam tristique justo pellentesque vehicula fringilla. Mauris sed consequat ligula. Quisque dui erat, laoreet ac lobortis non, finibus vel purus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis volutpat eros a purus venenatis, sit amet egestas quam lobortis. Donec viverra scelerisque augue a dictum. Nunc volutpat ultrices nisi non tristique." </p>
+  </div>
+
+  <div class="lyrics">
+      <!--same thing as the getting the articles image. please review the lyrics table to get the correct lyrics!-->
+    <?php $str = $lyrics->lyrics; ?>
+  <span>
+  <a href="http://www.<?php echo $str ?>"><img src="images/genius.png" style = "display: block; width: 200px; margin-left: auto;
+  margin-right: auto;"></a>
+</span>
+</div>
+
+>>>>>>> Capstone_Development
 
 
   </body>
