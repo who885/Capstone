@@ -11,7 +11,7 @@
     require 'Classes\Database.php';
     $conn = require  'includes\db.php';
 
-$articles = Music::getByID($conn, 1);
+$articles = Music::getByID($conn, 4);
 $lyrics = lyrics::getByID($conn, 16);
      ?>
     <meta charset="utf-8">
