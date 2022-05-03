@@ -13,6 +13,7 @@
 
 $articles = Music::getByID($conn, 4);
 $lyrics = lyrics::getByID($conn, 16);
+$translate = Translated::getByID($conn,1);
      ?>
     <meta charset="utf-8">
     <title>Media Music</title>
@@ -38,22 +39,22 @@ $lyrics = lyrics::getByID($conn, 16);
 
       <div class="column">
     <div class="article_1">
-      <a href="#">  <img class="image" src="images/google.png" alt=""></a>
+      <a href="">  <img class="image" src="images/google.png" alt=""></a>
     </div></div>
 
       <div class="column">
     <div class="article_1">
-      <a href="#">  <img class="image" src="images/amazon_music.png" alt=""></a>
+      <a href="<?php echo $articles->platform_1; ?>">  <img class="image" src="images/amazon_music.png" alt=""></a>
     </div></div>
 
     <div class="column">
     <div class="article_1">
-      <a href="#">  <img class="image" src="images/pandora.jpg" alt=""></a>
+      <a href="<?php echo $articles->platform_2; ?>">  <img class="image" src="images/pandora.jpg" alt=""></a>
     </div></div>
 
     <div class="column">
     <div class="article_1">
-      <a href="#">  <img class="image" src="images/itunes.png" alt=""></a>
+      <a href="<?php echo $articles->platform_3; ?>">  <img class="image" src="images/itunes.png" alt=""></a>
     </div></div>
 
   </div>
