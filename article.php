@@ -39,11 +39,6 @@ $translate = Translated::getByID($conn,1);
 
       <div class="column">
     <div class="article_1">
-      <a href="">  <img class="image" src="images/google.png" alt=""></a>
-    </div></div>
-
-      <div class="column">
-    <div class="article_1">
       <a href="<?php echo $articles->platform_1; ?>">  <img class="image" src="images/amazon_music.png" alt=""></a>
     </div></div>
 
