@@ -1,6 +1,6 @@
 body{
 width: 1920px;
-background: url("bluetest.jpg");
+background: url("/images/bluetest.jpg")
 }
 
 .topnav ul {

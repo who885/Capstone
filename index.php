@@ -27,12 +27,12 @@ $articles6 = Music::getByID($conn, 6);
 $articles7 = Music::getByID($conn, 7);
      ?>
     <meta charset="utf-8">
-    <title>Website title</title>
+    <title>Media Music</title>
   </head>
   <body>
     <nav class="topnav">
       <ul>
-        <li class="website_name">Website Name</li>
+        <li class="website_name">Media Music</li>
         <li><a href="index.php">Home</a></li>
 
       </ul>
