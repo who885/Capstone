@@ -3,16 +3,16 @@
   <head>
     <link rel="stylesheet" href="/css/article.css">
     <?php
-    require 'Classes\Music.php';
-    require 'Classes\Lyrics.php';
-    require 'Classes\Translated.php';
-    require 'Classes\Dates.php';
-    require 'Classes\Database.php';
-    $conn = require  'includes\db.php';
+    require 'Classes/Music.php';
+    require 'Classes/Lyrics.php';
+    require 'Classes/Translated.php';
+    require 'Classes/Dates.php';
+    require 'Classes/Database.php';
+    $conn = require  'includes/db.php';
 //$conn needs to be in there, the number corresponds to the id number in the tables.
 
 $articles = Music::getByID($conn, 4);
-$lyrics = lyrics::getByID($conn, 10);
+$lyrics = lyrics::getByID($conn, 9);
 $translate = Translated::getByID($conn,1);
      ?>
     <meta charset="utf-8">
@@ -53,18 +53,18 @@ $translate = Translated::getByID($conn,1);
 </div>
 
     <div class="mainimage">
-    <img class="Main Image" src="<?php echo $articles->thumb_link; ?>" alt="">
+    <img class="Main Image" src="https://i1.sndcdn.com/artworks-1OHOA4uZkbc36Prf-ht3dkw-t500x500.jpg" alt="">
 </div>
 
     <div class="description">
     <b>Title</b>
-    <p>"Ut sodales, sapien non sagittis rutrum, lorem ante placerat est, id porttitor enim diam at dui. Cras laoreet dapibus dolor a auctor. Morbi sollicitudin, nisl nec fermentum condimentum, odio ex rutrum arcu, quis dapibus mi massa ut lacus. Suspendisse a scelerisque leo. Suspendisse vel eros sed dolor volutpat bibendum. Quisque blandit gravida libero, eu tincidunt massa cursus non. Donec euismod, dui in facilisis fringilla, velit felis consequat enim, ut fringilla nunc turpis vitae nibh. Nam tristique justo pellentesque vehicula fringilla. Mauris sed consequat ligula. Quisque dui erat, laoreet ac lobortis non, finibus vel purus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis volutpat eros a purus venenatis, sit amet egestas quam lobortis. Donec viverra scelerisque augue a dictum. Nunc volutpat ultrices nisi non tristique." </p>
+    <p>Michael Joseph Jackson was an American singer, songwriter, and dancer. Dubbed the "King of Pop", he is regarded as one of the most significant cultural figures of the 20th century.After the release of Bad in August of 1987, “Smooth Criminal” was the album’s seventh single, released on November 14, 1988. It peaked at No. 7 on the Billboard Hot 100 and No. 2 on the Billboard Hot Black Singles chart but never reached No. 1 on either. It did, however, reach No. 1 in Belgium, Iceland, the Netherlands, and Spain. Swingrowers are an accomplished four-piece band from Palermo, Sicily. They are Loredana Grimaudo (singer, songwriter), Roberto Costa aka Pisk (DJ, producer) , Alessio Costagliola (guitarist) , Ciro Pusateri (saxophonist). From Jazz to hip-hop, electronica to gypsy swing their sound has been steadily evolving since their debut into a unique vintage-inspired pop. They are noted for their irreverent style, which blends the freshness of dance music, with the warm influences of swing from the 20s and 30s. </p>
   </div>
 
   <div class="lyrics">
     <?php $str = $lyrics->lyrics; ?>
   <span>
-  <a href="http://www.<?php echo $str ?>"><img src="images/genius.png" style = "display: block; width: 200px; margin-left: auto;
+  <a href="http://www.<?php echo $str ?>"><img src="https://i.pinimg.com/originals/72/a8/fc/72a8fcb08556a100c1be17a02082ae0b.jpg" style = "display: block; width: 200px; margin-left: auto;
   margin-right: auto;"></a>
 </span>
 </div>
