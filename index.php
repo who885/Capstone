@@ -12,14 +12,14 @@
     require 'Classes/Dates.php';
     require 'Classes/Database.php';
     $conn = require  'includes/db.php';
-    $articles = Music::getByID($conn, 1);
-    $articles2 = Music::getByID($conn, 2);
   //  $lyrics = Lyrics::getByID($conn, 1);
   $dates = Dates::getByID($conn, 1);
   $dates4 = Dates::getByID($conn, 21);
   $dates5 = Dates::getByID($conn, 22);
   $dates7 = Dates::getByID($conn, 27);
   //  $translated = Translated::getByID($conn, 1);
+$articles = Music::getByID($conn, 1);
+$articles2 = Music::getByID($conn, 2);
 $articles3 = Music::getByID($conn, 3);
 $articles4 = Music::getByID($conn, 4);
 $articles5 = Music::getByID($conn, 5);
@@ -46,7 +46,7 @@ $articles7 = Music::getByID($conn, 7);
 
 <div class="column">
 <div class="article_1">
-  <a href="Art_1.php">  <img class="art_1_img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7CQZEucIWnHpDffyJp1dgmJvKCZ4iHe-kEg&usqp=CAU" alt="" height="450px">
+  <a href="Art_1.php">  <img class="art_1_img" src="<?php echo $articles4->thumb_link; ?>" alt="" >
     <div class="center">
     <h2>Article_1</h2>
     <div class="content1">
@@ -90,7 +90,7 @@ $articles7 = Music::getByID($conn, 7);
 <div class="column2">
 <div class="article_3">
   <!--this is how you link your article page!-->
-  <a href="Art_4.php">  <img class="art_3_img" src="<?php echo $articles4->thumb_link; ?>" alt="">
+  <a href="Art_4.php">  <img class="art_3_img" src="<?php echo $articles->thumb_link; ?>" alt="">
     <div class="center3">
     <h2>Article_4</h2>
     <div class="content3">
@@ -191,10 +191,10 @@ $articles7 = Music::getByID($conn, 7);
 
    <div class="container">
      <div class="image_1">
-         <a href="Art_5.php"> <img   src="<?php echo $articles6->thumb_link; ?>" alt=""/> </a>
+         <a href="Art_5.php"> <img   src="<?php echo $articles3->thumb_link; ?>" alt=""/> </a>
      </div>
      <div class="image_2" >
-      <a href="Art_6.php"> <img  src="<?php echo $articles3->thumb_link; ?>" alt=""/> </a>
+      <a href="Art_6.php"> <img  src="<?php echo $articles6->thumb_link; ?>" alt=""/> </a>
      </div>
      <div class="image_3" >
        <a href="Art_7.php"> <img src="<?php echo $articles7->thumb_link; ?>" alt=""/> </a>

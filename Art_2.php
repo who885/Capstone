@@ -11,7 +11,7 @@
     $conn = require  'includes/db.php';
 //$conn needs to be in there, the number corresponds to the id number in the tables.
 
-$articles = Music::getByID($conn, 4);
+$articles = Music::getByID($conn, 2);
 $lyrics = lyrics::getByID($conn, 9);
 $translate = Translated::getByID($conn,1);
      ?>
