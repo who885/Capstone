@@ -49,7 +49,7 @@ $translate = Translated::getByID($conn,1);
 
   </div>
 <div class="button">
-<a href="#" class="Trasnlate">Translate</a>
+<a href="Art_1_Translated.php" class="Trasnlate">Translate</a>
 </div>
 
     <div class="mainimage">

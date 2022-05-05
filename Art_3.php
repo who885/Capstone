@@ -13,7 +13,7 @@
 
 $articles = Music::getByID($conn, 5);
 $lyrics = lyrics::getByID($conn, 13);
-$translate = Translated::getByID($conn,1);
+$translate = Translated::getByID($conn,3);
      ?>
     <meta charset="utf-8">
     <title>Media Music</title>
@@ -49,7 +49,7 @@ $translate = Translated::getByID($conn,1);
 
   </div>
 <div class="button">
-<a href="#" class="Trasnlate">Translate</a>
+<a href="Art_3_translated.php" class="Trasnlate">Translate</a>
 </div>
 
     <div class="mainimage">

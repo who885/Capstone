@@ -58,7 +58,7 @@ $translate = Translated::getByID($conn,7);
 
     <div class="description">
     <b>Highway Romance</b>
-    <p>"Highway to Your Heart” is a melancholy ballad about the complexity of love and loss. Lykke Li translates the feelings of longing and hopelessness into an ethereal track that evokes deep emotion. It’s like the musical representation of the long cry you have after a tumultuous romance comes to an end. " </p>
+    <p> <?php echo $translate->Translated; ?></p>
   </div>
 
   <div class="lyrics">
