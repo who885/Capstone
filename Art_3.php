@@ -3,16 +3,16 @@
   <head>
   <link rel="stylesheet" href="/css/article.css">
     <?php
-    require 'Classes\Music.php';
-    require 'Classes\Lyrics.php';
-    require 'Classes\Translated.php';
-    require 'Classes\Dates.php';
-    require 'Classes\Database.php';
-    $conn = require  'includes\db.php';
+    require 'Classes/Music.php';
+    require 'Classes/Lyrics.php';
+    require 'Classes/Translated.php';
+    require 'Classes/Dates.php';
+    require 'Classes/Database.php';
+    $conn = require  'includes/db.php';
 //$conn needs to be in there, the number corresponds to the id number in the tables.
 
 $articles = Music::getByID($conn, 4);
-$lyrics = lyrics::getByID($conn, 10);
+$lyrics = lyrics::getByID($conn, 13);
 $translate = Translated::getByID($conn,1);
      ?>
     <meta charset="utf-8">
@@ -53,18 +53,18 @@ $translate = Translated::getByID($conn,1);
 </div>
 
     <div class="mainimage">
-    <img class="Main Image" src="<?php echo $articles->thumb_link; ?>" alt="">
+    <img class="Main Image" src="https://i1.sndcdn.com/artworks-qjNvMyx7GyOx6IJB-Fy3w9g-t500x500.jpg" alt="" width="600px" height="500px">
 </div>
 
     <div class="description">
-    <b>Title</b>
-    <p>"Ut sodales, sapien non sagittis rutrum, lorem ante placerat est, id porttitor enim diam at dui. Cras laoreet dapibus dolor a auctor. Morbi sollicitudin, nisl nec fermentum condimentum, odio ex rutrum arcu, quis dapibus mi massa ut lacus. Suspendisse a scelerisque leo. Suspendisse vel eros sed dolor volutpat bibendum. Quisque blandit gravida libero, eu tincidunt massa cursus non. Donec euismod, dui in facilisis fringilla, velit felis consequat enim, ut fringilla nunc turpis vitae nibh. Nam tristique justo pellentesque vehicula fringilla. Mauris sed consequat ligula. Quisque dui erat, laoreet ac lobortis non, finibus vel purus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis volutpat eros a purus venenatis, sit amet egestas quam lobortis. Donec viverra scelerisque augue a dictum. Nunc volutpat ultrices nisi non tristique." </p>
+    <b>Immortal</b>
+    <p>Genre-hopping electronic duo Neffex amassed legions of followers by releasing a new song every week for 100 weeks. The material they issued as part of this challenge mixed EDM, rap, bass music, and other genres and resulted in several viral hits. Neffex built on the recognition brought to them from their prolifically released 100 songs in 2020 with proper debut album New Beginnings. Neffex is made up of vocalist/lyricist Bryce Savage and producer Cameron Wales. The two friends had played in a band together during high school, and reunited after completing college to form Neffex in 2014. Living in an apartment in Orange County, California, they developed a sound that merged elements of rap and electronic music. In 2017, they launched their 100 songs challenge, releasing a new single each week for 100 weeks. Among these songs were tracks like "Fight Back," "Rumors," "Best of Me," and several others that quickly became viral hits. Part of their rise to fame was their strategy of allowing their music to be used for free by content creators, which meant Neffex songs were soundtracking multiple videos from high-profile social media personalities. In addition to having their songs regularly collect millions of streams, Neffex accumulated millions of followers across several social media platforms.</p>
   </div>
 
   <div class="lyrics">
     <?php $str = $lyrics->lyrics; ?>
   <span>
-  <a href="http://www.<?php echo $str ?>"><img src="images/genius.png" style = "display: block; width: 200px; margin-left: auto;
+  <a href="http://www.<?php echo $str ?>"><img src="https://i.scdn.co/image/ab6761610000e5eb3a7d849b89d6ba9f5bd81639" style = "display: block; width: 200px; margin-left: auto;
   margin-right: auto;"></a>
 </span>
 </div>
