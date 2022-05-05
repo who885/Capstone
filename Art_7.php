@@ -11,8 +11,8 @@
     $conn = require  'includes\db.php';
 //$conn needs to be in there, the number corresponds to the id number in the tables.
 
-$articles = Music::getByID($conn, 4);
-$lyrics = lyrics::getByID($conn, 10);
+$articles = Music::getByID($conn, 7);
+$lyrics = lyrics::getByID($conn, 6);
 $translate = Translated::getByID($conn,1);
      ?>
     <meta charset="utf-8">
@@ -57,8 +57,8 @@ $translate = Translated::getByID($conn,1);
 </div>
 
     <div class="description">
-    <b>Title</b>
-    <p>"Ut sodales, sapien non sagittis rutrum, lorem ante placerat est, id porttitor enim diam at dui. Cras laoreet dapibus dolor a auctor. Morbi sollicitudin, nisl nec fermentum condimentum, odio ex rutrum arcu, quis dapibus mi massa ut lacus. Suspendisse a scelerisque leo. Suspendisse vel eros sed dolor volutpat bibendum. Quisque blandit gravida libero, eu tincidunt massa cursus non. Donec euismod, dui in facilisis fringilla, velit felis consequat enim, ut fringilla nunc turpis vitae nibh. Nam tristique justo pellentesque vehicula fringilla. Mauris sed consequat ligula. Quisque dui erat, laoreet ac lobortis non, finibus vel purus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis volutpat eros a purus venenatis, sit amet egestas quam lobortis. Donec viverra scelerisque augue a dictum. Nunc volutpat ultrices nisi non tristique." </p>
+    <b>Highway Romance</b>
+    <p>"Highway to Your Heart” is a melancholy ballad about the complexity of love and loss. Lykke Li translates the feelings of longing and hopelessness into an ethereal track that evokes deep emotion. It’s like the musical representation of the long cry you have after a tumultuous romance comes to an end. " </p>
   </div>
 
   <div class="lyrics">

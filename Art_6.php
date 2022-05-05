@@ -11,8 +11,8 @@
     $conn = require  'includes\db.php';
 //$conn needs to be in there, the number corresponds to the id number in the tables.
 
-$articles = Music::getByID($conn, 4);
-$lyrics = lyrics::getByID($conn, 10);
+$articles = Music::getByID($conn, 6);
+$lyrics = lyrics::getByID($conn, 8);
 $translate = Translated::getByID($conn,1);
      ?>
     <meta charset="utf-8">
@@ -57,8 +57,10 @@ $translate = Translated::getByID($conn,1);
 </div>
 
     <div class="description">
-    <b>Title</b>
-    <p>"Ut sodales, sapien non sagittis rutrum, lorem ante placerat est, id porttitor enim diam at dui. Cras laoreet dapibus dolor a auctor. Morbi sollicitudin, nisl nec fermentum condimentum, odio ex rutrum arcu, quis dapibus mi massa ut lacus. Suspendisse a scelerisque leo. Suspendisse vel eros sed dolor volutpat bibendum. Quisque blandit gravida libero, eu tincidunt massa cursus non. Donec euismod, dui in facilisis fringilla, velit felis consequat enim, ut fringilla nunc turpis vitae nibh. Nam tristique justo pellentesque vehicula fringilla. Mauris sed consequat ligula. Quisque dui erat, laoreet ac lobortis non, finibus vel purus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis volutpat eros a purus venenatis, sit amet egestas quam lobortis. Donec viverra scelerisque augue a dictum. Nunc volutpat ultrices nisi non tristique." </p>
+    <b>Direction</b>
+    <p>"Direction is the second release from SOLENCE in less than a year. Their debut LP Brothers was released in November of 2019 and shot them quickly to international acclaim. To date, they have clocked up an impressive 600,000 listeners on Spotify, 80 million combined streams, have been featured on the cover of Spotify’s New Core playlist twice and Animal In Me became the most played track on SiriusXM Octane when it was released.
+
+" </p>
   </div>
 
   <div class="lyrics">
