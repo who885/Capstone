@@ -13,7 +13,7 @@
 
 $articles = Music::getByID($conn, 2);
 $lyrics = lyrics::getByID($conn, 9);
-$translate = Translated::getByID($conn,1);
+$translate = Translated::getByID($conn,2);
      ?>
     <meta charset="utf-8">
     <title>Media Music</title>
@@ -49,7 +49,7 @@ $translate = Translated::getByID($conn,1);
 
   </div>
 <div class="button">
-<a href="#" class="Trasnlate">Translate</a>
+<a href="Art_2_translated.php" class="Trasnlate">Translate</a>
 </div>
 
     <div class="mainimage">
@@ -58,7 +58,8 @@ $translate = Translated::getByID($conn,1);
 
     <div class="description">
     <b>Smooth criminal</b>
-    <p>Michael Joseph Jackson was an American singer, songwriter, and dancer. Dubbed the "King of Pop", he is regarded as one of the most significant cultural figures of the 20th century.After the release of Bad in August of 1987, “Smooth Criminal” was the album’s seventh single, released on November 14, 1988. It peaked at No. 7 on the Billboard Hot 100 and No. 2 on the Billboard Hot Black Singles chart but never reached No. 1 on either. It did, however, reach No. 1 in Belgium, Iceland, the Netherlands, and Spain. Swingrowers are an accomplished four-piece band from Palermo, Sicily. They are Loredana Grimaudo (singer, songwriter), Roberto Costa aka Pisk (DJ, producer) , Alessio Costagliola (guitarist) , Ciro Pusateri (saxophonist). From Jazz to hip-hop, electronica to gypsy swing their sound has been steadily evolving since their debut into a unique vintage-inspired pop. They are noted for their irreverent style, which blends the freshness of dance music, with the warm influences of swing from the 20s and 30s. </p>
+    <p>Michael Joseph Jackson was an American singer, songwriter, and dancer. Dubbed the "King of Pop", he is regarded as one of the most significant cultural figures of the 20th century.After the release of Bad in August of 1987, “Smooth Criminal” was the album’s seventh single, released on November 14, 1988. It peaked at No. 7 on the Billboard Hot 100 and No. 2 on the Billboard Hot Black Singles chart but never reached No. 1 on either. It did, however, reach No. 1 in Belgium, Iceland, the Netherlands, and Spain. Swingrowers are an accomplished four-piece band from Palermo, Sicily. They are Loredana Grimaudo (singer, songwriter), Roberto Costa aka Pisk (DJ, producer) , Alessio Costagliola (guitarist) , Ciro Pusateri (saxophonist). From Jazz to hip-hop, electronica to gypsy swing their sound has been steadily evolving since their debut into a unique vintage-inspired pop. They are noted for their irreverent style, which blends the freshness of dance music, with the warm influences of swing from the 20s and 30s.
+    </p>
   </div>
 
   <div class="lyrics">
